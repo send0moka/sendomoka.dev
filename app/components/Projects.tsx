@@ -14,7 +14,7 @@ interface Project {
 }
 
 const getProjects = async (): Promise<Project[]> => {
-    const res = await fetch('https://raw.githubusercontent.com/sendomoka/sendomoka.dev/main/app/api/projects.json')
+    const res = await fetch('https://raw.githubusercontent.com/send0moka/sendomoka.dev/main/app/api/projects.json')
     if (!res.ok) {
         throw new Error('Failed to fetch projects')
     }
